@@ -1,5 +1,6 @@
-package com.krgcorporate.dip;
+package com.krgcorporate.dip.service;
 
+import com.krgcorporate.dip.domain.Contract;
 import lombok.AllArgsConstructor;
 
 import java.util.List;
@@ -8,13 +9,13 @@ import java.util.Optional;
 @AllArgsConstructor
 public class ContractService {
 
-    private final ContractRepository contractRepository;
+    private final ContractPersistence contractPersistence;
 
     public Optional<Contract> findById(int id) {
-        return contractRepository.findById(id);
+        return contractPersistence.findById(id);
     }
 
     public List<Contract> findAll() {
-        return contractRepository.findAll();
+        return contractPersistence.findAll();
     }
 }

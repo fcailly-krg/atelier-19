@@ -1,5 +1,9 @@
 package com.krgcorporate.dip;
 
+import com.krgcorporate.dip.service.ContractService;
+import com.krgcorporate.dip.domain.Contract;
+import com.krgcorporate.dip.repository.ContractRepository;
+
 import java.util.HashMap;
 
 public class Application {

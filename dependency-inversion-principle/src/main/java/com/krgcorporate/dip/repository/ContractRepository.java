@@ -1,16 +1,16 @@
-package com.krgcorporate.dip;
+package com.krgcorporate.dip.repository;
 
+import com.krgcorporate.dip.service.ContractPersistence;
+import com.krgcorporate.dip.domain.Contract;
 import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
 @AllArgsConstructor
-public class ContractRepository {
+public class ContractRepository implements ContractPersistence {
 
     private Map<Integer, Contract> contracts;
 

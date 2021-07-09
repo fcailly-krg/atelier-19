@@ -1,4 +1,4 @@
-package com.krgcorporate.dip;
+package com.krgcorporate.dip.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.ToString;

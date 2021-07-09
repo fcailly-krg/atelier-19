@@ -1,16 +1,13 @@
 package com.krgcorporate.srp;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+@Getter
+@AllArgsConstructor
 public class TextManipulator {
 
     private String text;
-
-    public TextManipulator(String text) {
-        this.text = text;
-    }
-
-    public String getText() {
-        return text;
-    }
 
     public void appendText(String newText) {
         text = text.concat(newText);
@@ -28,9 +25,5 @@ public class TextManipulator {
             text = text.replace(word, "");
         }
         return text;
-    }
-
-    public void printText() {
-        System.out.println(getText());
     }
 }

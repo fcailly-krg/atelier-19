@@ -1,8 +1,5 @@
 package com.krgcorporate.isp;
 
-public interface Payment {
-
+public interface Bank extends Payment {
     void initiatePayments();
-
-    Object status();
 }
