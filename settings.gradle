@@ -1,0 +1,8 @@
+rootProject.name = 'atelier-19'
+
+include 'single-responsibility-principle'
+include 'open-closed-principle'
+include 'liskov-substitution-principle'
+include 'interface-segregation-principle'
+include 'dependency-inversion-principle'
+
